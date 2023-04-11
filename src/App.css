@@ -1,38 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
+  width: 100%;
+  min-height: 100vh;
+  height: fit-content;
+  background-color: #a9c5ad;
+}
+.Navbar{
+  width: 100%;
+  height: 50px;
+  margin-bottom: 50px;
+  background-color: rgb(12, 60, 165);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.inactive{
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+  font-family: 'Lily Script One', cursive;
+}
+.active{
+  color: yellowgreen;
+  font-size: 30px;
+  font-family: 'Lily Script One', cursive;
+}
+.heading{
+  margin-top: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.heading h1{
+  font-size: 45px;
+}
+.heading button{
+  width: 350px;
+  height: 50px;
+  border-radius: 50px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.heading button:hover{
+  border: 3px solid black;
+  background-color: rgba(100, 243, 160, 0.884);
+}
+.table-cntnr{
+  margin-top: 70px;
+  width: 100%;
+  height: fit-content;
+}
+table{
+  width: 90%;
+  min-height: 60vh;
+  height: fit-content;
+  margin-left: 5%;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  border-spacing: 5px;
+}
+th, td{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.editLink{
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(16, 31, 170);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.AddStudent{
+  margin-left: 150px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  gap: 200px;
 }
-
-.App-link {
-  color: #61dafb;
+.AddStudent input{
+  width: 400px;
+  height: 60px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: inherit;
+  padding: 10px;
+  font-size: 25px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.AddStudent div{
+  position: relative;
+}
+.AddStudent label{
+  position: absolute;
+  top: 3px;
+  left: 50px;
+  font-size: 20px;
+  background-color: #a9c5ad;
+  padding: 5px;
+  color: rgb(70, 69, 69);
+}
+.btnBox{
+  position: relative;
+  top: 80px;
+  left: 55vw;
+}
+.btnBox button{
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  font-size: 30px;
+  cursor: pointer;
+  margin: 30px;
 }
